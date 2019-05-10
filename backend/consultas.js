@@ -12,12 +12,7 @@ const dbConection = mysql.createConnection(url.urlMySql)
 	})
 }
 
-
-//hello world
-
-exports.agregarDataparaConflicto = function(req, res, sql, data){
- //hello world
-}
+//borrado cambios
 
 
 
