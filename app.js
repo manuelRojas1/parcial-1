@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser()); // get information from html forms
 //view engine setup
 //app.use(express.static(path.join(__dirname, 'public')));
-app.set('views', path.join(__dirname, 'index'));
+app.set('views', path.join(__dirname, 'view'));
 app.set('view engine', 'ejs'); // set up ejs for templating
 
 // routes ======================================================================
