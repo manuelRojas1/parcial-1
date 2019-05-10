@@ -15,11 +15,11 @@ const dbConection = mysql.createConnection(url.urlMySql)
 
 exports.agregarDataparaConflicto = function( data){
  //hello world   
-
+//nuevos datos
 }
 
 
-exports.agregarData = function( data){
+exports.agregarData = function( nuevo, data){
 	dbConection.query(sql,[data],function(err,result){
 		if(!err){
 			home.direccionar(res);
