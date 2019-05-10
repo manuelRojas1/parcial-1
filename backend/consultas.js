@@ -23,6 +23,7 @@ exports.agregarData = function(req, res, sql, data){
 		if(!err){
 			home.direccionar(res);
 		}else{
+			console.log("erro: "+err)
 			res.redirect('/error');
 		}
 	})
