@@ -14,14 +14,13 @@ const dbConection = mysql.createConnection(url.urlMySql)
 
 //hello world//
 exports.agregarData = function(req, res, sql, data){
-	dbConection.query(sql,[data],function(err,result){
+	dbConection.query(sql,[ID],function(err,resul){
 		if(!err){
 			home.direccionar(res);
 		}else{
-			console.log("erro: "+err)
 			res.redirect('/error');
 		}
-	})
+	});
 }
 
 exports.eliminar = function(req, res,sql,ID){
