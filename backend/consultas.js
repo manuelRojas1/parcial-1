@@ -13,6 +13,9 @@ const dbConection = mysql.createConnection(url.urlMySql)
 }
 
 
+exports.agregarDataparaConflicto = function(req, res, sql, data){
+ //hello world
+}
 
 
 exports.agregarData = function(req, res, sql, data){
