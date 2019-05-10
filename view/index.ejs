@@ -15,7 +15,7 @@
                                         <label for="to">código:</label>
                                         <div class="ml-2"></div>
                                         <div class="form-group ">
-                                          <input type="text" name="nombre" class="form-control" required>
+                                          <input type="text" name="codigo" class="form-control" required>
                                         </div>
                                    </div>
 
@@ -23,7 +23,7 @@
                                             <label for="to">altura:</label>
                                             <div class="ml-2"></div>
                                             <div class="form-group ">
-                                              <input type="text" name="nombre" class="form-control" required>
+                                              <input type="text" name="altura" class="form-control" required>
                                             </div>
                                      </div>
                                   
@@ -31,7 +31,7 @@
                                             <label for="subject">tipo :</label>
                                             <div class="ml-3"></div>
                                             <div class="form-group ">  
-                                              <input type="text" name="ciudad" class="form-control" required>
+                                              <input type="text" name="tipo" class="form-control" required>
                                             </div>
                                      </div>
 
@@ -39,7 +39,7 @@
                                         <label for="subject">longitud :</label>
                                         <div class="ml-3"></div>
                                         <div class="form-group ">  
-                                          <input type="text" name="ciudad" class="form-control" required>
+                                          <input type="text" name="longitud" class="form-control" required>
                                         </div>
                                      </div>
 
@@ -47,7 +47,7 @@
                                         <label for="subject">latitud :</label>
                                         <div class="ml-3"></div>
                                         <div class="form-group ">  
-                                        <input type="text" name="ciudad" class="form-control" required>
+                                        <input type="text" name="altitud" class="form-control" required>
                                         </div>
                                     </div>
                                            
@@ -60,28 +60,32 @@
                                 </form>
                         </div>
                 </div>
-                <!--div class="col-md-7">
+                <div class="col-md-7">
                         <div class="card border-secondary mb-3 mt-5 mr-5 text-center" style="max-width: 100rem;">
                                 <table class="table table-bordered table-hover table-wrapper-scroll-y">
                                     <thead>
                                         <tr class="table-primary">
-                                            <th scope="col">placa</th>
-                                            <th scope="col">color</th>
-                                            <th scope="col">ciudad</th>
-                                            <th scope="col">Actions</th>
-                                            
+                                            <th scope="col">id</th>
+                                            <th scope="col">codigo</th>
+                                            <th scope="col">altura</th>
+                                            <th scope="col">tipo</th>
+                                            <th scope="col">longitud</th>
+                                            <th scope="col">latitud</th>
                                          </tr>
                                     </thead>
                                     <tbody>
                                         <% if (Data) {%>
                                                 <% for(var i=0; i<Data.length; i++) { %>
                                                     <tr>
-                                                        <td><%=Data[i].placa%></td>
-                                                        <td><%=Data[i].color%></td>
-                                                        <td><%=Data[i].ciudad%></td>
+                                                        <td><%=Data[i].id%></td>
+                                                        <td><%=Data[i].codigo%></td>
+                                                        <td><%=Data[i].altura%></td>
+                                                        <td><%=Data[i].tipo%></td>
+                                                        <td><%=Data[i].longitud%></td>
+                                                        <td><%=Data[i].latitud%></td>
                                                         <td>
-                                                        <a href="/update/<%= Data[i].placa %>" class="btn btn-success">Editar</a>
-                                                        <a href="/delete/<%= Data[i].placa %>" class="btn btn-danger">Eliminar</a>
+                                                        <a href="/update/<%= Data[i].id %>" class="btn btn-success">Editar</a>
+                                                        <a href="/delete/<%= Data[i].id %>" class="btn btn-danger">Eliminar</a>
                                                         </td>
                                                     </tr>
                                                 <%}%>
