@@ -1,4 +1,4 @@
-var home = require('../negocio/home');
+var home = require('../backend/home');
 
 //you can include all your controllers
 
