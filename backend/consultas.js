@@ -12,10 +12,6 @@ const dbConection = mysql.createConnection(url.urlMySql)
 	})
 }
 
-//borrado cambios
-
-
-
 //hello world//
 exports.agregarData = function(req, res, sql, data){
 	dbConection.query(sql,[data],function(err,result){
